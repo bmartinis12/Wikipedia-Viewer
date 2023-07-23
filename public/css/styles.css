@@ -1,0 +1,159 @@
+/* Reset browser css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Body */
+
+body {
+    font-size: 22px;
+    font-family:'Times New Roman', 'Times', 'serif';
+    background-color: #85929E;
+    color: aliceblue;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1C2833;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: black;
+}
+
+.search-input {
+    width: 50vw;
+    height: 30px;
+    color: black;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.btn-submit, .btn-random {
+    height: 30px;
+    margin: 0 3px;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Main */ 
+
+main {
+    width: 80vw;
+    height: 75vh;
+    background-color: #1C2833;
+    margin: auto;
+    margin-top: 15vh;
+    overflow-y: scroll;
+}
+
+.wikiPage {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #85929E;
+    color: black;
+}
+
+.wikiPage:hover {
+   cursor: pointer;
+   border: 3px solid white;
+}
+
+.wikiPage h2 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.wikiPage p {
+    font-size: 15px;
+    color: white;
+}
+
+/* Media queries */
+
+@media(max-width: 31.25em){
+    .wikiPage {
+        width: 80%;
+    }
+}
+
+@media(max-width: 18.75em){
+    .wikiPage h2 {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    
+    .wikiPage p {
+        font-size: 12px;
+        color: white;
+    }
+
+    .btn-submit, .btn-random {
+        height: 30px;
+        font-size: 10px;
+        border-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+        color: black;
+    }
+}
